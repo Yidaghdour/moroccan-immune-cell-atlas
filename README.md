@@ -159,6 +159,9 @@ gatk GenotypeGVCFs \
 ### Quality Control Summary
 
 
+<p align="center">
+  <img src="images/WGS_Sequencing_Read_QC.png" width="800">
+</p>
 
 
 
