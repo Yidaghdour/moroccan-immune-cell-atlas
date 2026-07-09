@@ -192,13 +192,12 @@ Variants were retained only if they met the following criteria:
 
 **(iii)** minimum genotype quality (GQ) of 20.
 
-Pool-specific filtered VCF along with the Cell Ranger output BAM file along with the corresponding filtered cell barcode list for each pooled 10x Genomics was used by cellsnp-lite(1.2.3)  to obtain allele-specific read matrices as first step of  demultiplexing. cellsnp-lite was was performed with default parameters except minimum minor allele frequency threshold of 0.05 and a minimum count threshold of 10. The resulting cell-by-SNP count matrices were written as compressed VCF outputs for each pool. Demultiplexing was performed to infer donor identity and detect doublets by genotype-based donor assignment using vireoSNP(0.5.9). The pool specific cell-by-SNP count matrices from cellsnp-lite and the pool-specific genotype VCF with default parameters was used by viero to assignment of singlet(single donars), doublet, and unassigned cell classifications for downstream seurat analysis.
+Pool-specific filtered VCF along with the Cell Ranger output BAM file and the corresponding filtered cell barcode list for each pooled 10x Genomics was used by **cellsnp-lite(1.2.3)** to obtain allele-specific read matrices as first step of demultiplexing. cellsnp-lite was was performed with default parameters except minimum minor allele frequency threshold of **0.05** and a minimum count threshold of **10**. The resulting cell-by-SNP count matrices were written as compressed VCF outputs for each pool. Demultiplexing was performed to infer donor identity and detect doublets by genotype-based donor assignment using **vireoSNP(0.5.9)**. The pool specific cell-by-SNP count matrices from cellsnp-lite and the pool-specific genotype VCF with default parameters was used by viero to assignment of singlet(single donars), doublet, and unassigned cell classifications for downstream seurat analysis.
 
 
 ### Commands used
 
 Commands used for Demultiplexing is [here](scripts/singlecell-demultiplexing-workflow.smk)
-
 
 
 ---
