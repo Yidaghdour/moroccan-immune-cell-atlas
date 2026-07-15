@@ -302,13 +302,13 @@ Single-cell RNA-seq data were analysed using Seurat (version 5.1.0) on R (versio
 Doublets were identified and removed using scDblFinder (version 1.22.0) within each sequencing pool. A second, more stringent quality-control step was then applied within each pool and major cell type. Following re-normalization and Harmony integration, cell types were assigned using cluster marker genes, Azimuth reference mapping, and manual annotation. Final global and cell-type-specific UMAPs were generated for Figure 1.
 
 **Scripts used**
-Scripts used for scRNA-seq quality control, integration, annotation and UMAP generation are available [here](scripts/scrna/).
+Scripts used for scRNA-seq quality control, integration, annotation and UMAP generation are available [here](scripts/sc-rna/).
 
 ### Consensus Non-negative Matrix Factorization Analysis
 Consensus non-negative matrix factorization (cNMF) was performed independently for B cells, monocytes, naïve CD4 T cells, naïve CD8 T cells, memory T cells and cytotoxic T/NK cells to identify recurrent gene-expression programs. For each cell type, 2,000 genes and a range of values from K = 4–8 were evaluated across 50 factorization iterations. Final solutions were selected from the K-selection results as follows: B cells, K = 6; monocytes, K = 6; naïve CD4 T cells, K = 5; naïve CD8 T cells, K = 5; memory T cells, K = 5; and cytotoxic T/NK cells, K = 6. Consensus programs were generated using a local-density threshold of 0.1 and annotated based on their program-defining genes (Table S2 in paper).
 Program usage was averaged at the sample level and analysed separately within each stimulation condition using linear models of log-transformed usage, including lifestyle, sex, their interaction and age. Sex-specific urban–rural contrasts were extracted and corrected for multiple testing using the Benjamini–Hochberg method. Adjusted effect estimates and significance values were visualized in heatmaps for unstimulated and LPS-stimulated cells (data from Table S2). The provided cNMF script is configured for B cells but can be adapted to the other cell types by changing the input cell-type subset and selected K.
 **Scripts used**
-Scripts used for cNMF analysis, program annotation, statistical testing and heatmap generation are available [here](scripts/scrna/).
+Scripts used for cNMF analysis, program annotation, statistical testing and heatmap generation are available [here](scripts/sc-rna/)..
 
 ### Differential Gene Expression Analysis Using Memento
 Differential gene expression analysis was performed using Memento (version 0.1.2). For each major cell type, the corresponding cells were subsetted from the Seurat object, exported with their raw count matrix and metadata, and converted to an AnnData (.h5ad) object for analysis. Memento was run using pool-specific capture rates, with age included as a covariate and 5,000 bootstrap iterations. P values were corrected for multiple testing using the Benjamini-Hochberg method.
@@ -317,7 +317,7 @@ Urban and rural donors were compared separately within male and female unstimula
 The provided scripts are configured for B cells but can be adapted to the other major cell types. The same workflow was also applied to all PBMCs together for downstream multi-omics integration.
 
 **Scripts used**
-Scripts used for Memento differential gene expression analysis and the calculation of urban–rural differences in the LPS response are available [here](scripts/scrna/).
+Scripts used for Memento differential gene expression analysis and the calculation of urban–rural differences in the LPS response are available [here](scripts/sc-rna/)..
 
 ### Pseudobulk Differential Accessibility Analysis Using edgeR
 Differentially accessible regions were identified using a pseudobulk approach followed by analysis with edgeR (version 4.0.16) in R (version 4.3.1). For each major cell type, chromatin-accessibility counts were summed across cells belonging to the same donor and stimulation condition. Donor–cell-type combinations represented by fewer than 10 cells were excluded. Lowly detected peaks were filtered using “filterByExpr”, followed by TMM normalization and negative-binomial modelling with age included as a covariate. Multiple-testing correction was performed using the Benjamini–Hochberg method.
@@ -326,7 +326,7 @@ Urban and rural donors were compared separately within male and female unstimula
 The pseudobulk generation and edgeR workflows were applied independently to each major cell type.
 
 **Scripts used**
-Scripts used for cell-type-specific pseudobulk generation, edgeR differential accessibility analysis and calculation of urban–rural differences in the LPS response are available [here](scripts/scrna/).
+Scripts used for cell-type-specific pseudobulk generation, edgeR differential accessibility analysis and calculation of urban–rural differences in the LPS response are available [here](scripts/sc-rna/).
 
 
 
