@@ -35,7 +35,7 @@ table(Idents(GData))
 
 #### Monocytes ####
 
-setwd("/scratch/ts4594/RDS_files/Final_Final/New_UMAPs_celltype-level/")
+setwd("New_UMAPs_celltype-level/")
 GData<-readRDS("Monocytes.rds")
 
 GData <- subset(GData, subset = Stimulation == "Unstim")
@@ -69,7 +69,7 @@ DimPlot(GData, reduction = "umap.harmony", group.by = "Lifestyle", cols = c("#CD
 
 #### Dendritic cells ####
 
-setwd("/scratch/ts4594/RDS_files/Final_Final/New_UMAPs_celltype-level/")
+setwd("New_UMAPs_celltype-level/")
 GData<-readRDS("Dendritic.rds")
 
 GData <- subset(GData, subset = Stimulation == "Unstim")
@@ -103,7 +103,7 @@ DimPlot(GData, reduction = "umap.harmony", group.by = "Lifestyle", cols = c("#CD
 
 #### B cells ####
 
-setwd("/scratch/ts4594/RDS_files/Final_Final/New_UMAPs_celltype-level/")
+setwd("New_UMAPs_celltype-level/")
 GData_B <-readRDS("Bcells.rds")
 
 GData <- subset(GData_B, subset = Stimulation == "Unstim")
@@ -138,7 +138,7 @@ DimPlot(GData, reduction = "umap.harmony", group.by = "Lifestyle", cols = c("#CD
 
 #### Cytotoxic T/NK ####
 
-setwd("/scratch/ts4594/RDS_files/Final_Final/New_UMAPs_celltype-level/")
+setwd("New_UMAPs_celltype-level/")
 GData_Cyto <- readRDS("Cytotoxic.rds")
 
 GData <- subset(GData_Cyto, subset = Stimulation == "Unstim")
@@ -172,7 +172,7 @@ DimPlot(GData, reduction = "umap.harmony", group.by = "Lifestyle", cols = c("#CD
 
 #### Memory T ####
 
-setwd("/scratch/ts4594/RDS_files/Final_Final/New_UMAPs_celltype-level/")
+setwd("New_UMAPs_celltype-level/")
 GData_MemoryT <- readRDS("MemoryT.rds")
 
 GData <- subset(GData_MemoryT, subset = Stimulation == "Unstim")
@@ -206,7 +206,7 @@ DimPlot(GData, reduction = "umap.harmony", group.by = "Lifestyle", cols = c("#CD
 
 #### Naive CD4 ####
 
-setwd("/scratch/ts4594/RDS_files/Final_Final/New_UMAPs_celltype-level/")
+setwd("New_UMAPs_celltype-level/")
 GData_NaiveCD4 <- readRDS("NaiveCD4T.rds")
 
 GData <- subset(GData_NaiveCD4, subset = Stimulation == "Unstim")
@@ -240,7 +240,7 @@ DimPlot(GData, reduction = "umap.harmony", group.by = "Lifestyle", cols = c("#CD
 
 #### Naive CD8 ####
 
-setwd("/scratch/ts4594/RDS_files/Final_Final/New_UMAPs_celltype-level/")
+setwd("New_UMAPs_celltype-level/")
 GData_NaiveCD8 <- readRDS("NaiveCD8.rds")
 
 #GData_NaiveCD8 <- subset(GData, subset = Cluster_celltypes == "Naive CD8 T cells")
