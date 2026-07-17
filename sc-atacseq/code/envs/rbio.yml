@@ -1,0 +1,26 @@
+name: rbio
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - r-base=4.4
+  - r-devtools
+  - r-remotes
+  - r-data.table
+  - r-matrix
+  - bioconductor-biocgenerics
+  - bioconductor-s4vectors
+  - bioconductor-iranges
+  - bioconductor-genomicranges
+  - bioconductor-summarizedexperiment
+  - bioconductor-rtracklayer
+  - bioconductor-rhdf5
+  - bioconductor-genomicfeatures
+  - bioconductor-annotationdbi
+  - bioconductor-bsgenome
+  - bioconductor-biostrings
+  - bioconductor-motifmatchr
+  - bioconductor-tfbstools
+  - bioconductor-bsgenome.hsapiens.ucsc.hg38
+  - bioconductor-txdb.hsapiens.ucsc.hg38.knowngene
+  - bioconductor-org.hs.eg.db

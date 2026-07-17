@@ -334,13 +334,20 @@ Scripts used for cell-type-specific pseudobulk generation, edgeR differential ac
 
 ## scATAC-seq Analysis
 
-dadvavd
 
-dwqdwqdwqd
 
-qdwqdqwd
+*   **[Replicating the Analysis](sc-atacseq/docs/manuscript_companion_atac_tfbs_reproduction.md):** Step-by-step instructions to reproduce the ATAC TFBS analyses.
+*   **[Data Availability](sc-atacseq/docs/data_availability.md):** Details on where to download the raw matrices and reference datasets.
+*   **[ATAC Processing Methods](sc-atacseq/docs/manuscript_methods_atac_processing_label_transfer.md):** Methodology details regarding label transfer and peak processing.
+*   **[TFBS Methodology](sc-atacseq/docs/manuscript_methods_figure2d_tfbs.md):** Details on transcription factor binding site (TFBS) calculations.
+*   **[Pipeline Scripts Guide](sc-atacseq/code/scripts/README.md):** Descriptions of individual Python and R scripts.
 
-qwdwqdqwd
+
+
+### Directory
+
+```text
+sc-atacseq/
 
 ---
 

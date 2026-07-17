@@ -1,0 +1,13 @@
+label_key	lineage	method	reference_cells	matched_seed_cells	query_cells	holdout_accuracy	selected_threshold	selected_precision	selected_coverage	transferred_cells_before_threshold	transferred_cells_after_threshold	pairwise_agreement
+Cluster_celltypes	all	seed_import	317336	317336								
+Sub_Cluster_celltypes	all	seed_import	317336	291031								
+Cluster_celltypes	all	knn	317336	317336	167801.0	0.954244658725657	0.5	0.9589776256071343	0.989396231171614	167801.0	159234.0	
+Cluster_celltypes	all	graph	317336	317336	167801.0	0.947355981343754	0.5	0.9497617879358647	0.995509265095172	167798.0	165382.0	
+Cluster_celltypes	all	knn_vs_graph_thresholded	317336	317336	167801.0							0.9085331457220184
+Sub_Cluster_celltypes	b_lineage	knn	291031	41631	24603.0	0.8597333973820104	0.6372	0.9042316258351893	0.8627356791161283	24603.0	16551.0	
+Sub_Cluster_celltypes	b_lineage	graph	291031	41631	24603.0	0.8494055482166446	0.6764	0.9020491207673303	0.826348024498619	24602.0	19578.0	
+Sub_Cluster_celltypes	b_lineage	knn_vs_graph_thresholded	291031	41631	24603.0							0.8789443488238669
+Sub_Cluster_celltypes	t_lineage	knn	291031	249400	130607.0	0.8157177225340818	0.5784	0.9051758619770139	0.7518243785084202	130607.0	83400.0	
+Sub_Cluster_celltypes	t_lineage	graph	291031	249400	130607.0	0.7922689816949696	0.7156	0.9002366863905326	0.6776670609699862	130603.0	87397.0	
+Sub_Cluster_celltypes	t_lineage	knn_vs_graph_thresholded	291031	249400	130607.0							0.9309325861620198
+Sub_Cluster_celltypes	lineage_split_combined	knn_vs_graph_thresholded	291031	291031	155210.0							0.9217860882950402

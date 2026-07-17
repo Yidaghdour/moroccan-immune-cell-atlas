@@ -1,0 +1,11 @@
+name: tfbs
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - matplotlib=3.10.8
+  - numpy=1.26.4
+  - pandas=2.3.3
+  - scipy=1.17.1
+  - seaborn=0.13.2
+  - statsmodels=0.14.6

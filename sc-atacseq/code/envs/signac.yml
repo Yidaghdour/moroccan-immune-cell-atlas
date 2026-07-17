@@ -1,0 +1,11 @@
+name: signac
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - bedtools=2.31
+  - r-base=4.3
+  - r-data.table
+  - r-matrix
+  - r-signac=1.16.0
+  - bioconductor-genomicranges

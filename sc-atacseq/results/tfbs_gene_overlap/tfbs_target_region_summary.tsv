@@ -1,0 +1,30 @@
+major_label	stimulation	sex	region_class	regions	target_genes	peaks	linked_regions	median_link_abs_pearson	median_link_shared_donors	target_rna_significant	atac_da_significant
+B cells	Unstim	F	distal_peak	5	3	5	5	0.4034927896722693	93.0	4	0
+B cells	Unstim	F	promoter	11	11	0	0			5	0
+B cells	Unstim	F	proximal_peak	22	8	22	22	0.41684248133300494	93.0	8	0
+B cells	Unstim	F	tss_proximal_peak	6	5	6	6	0.6156749770405774	93.0	3	0
+B cells	Unstim	M	distal_peak	3	1	3	3	0.3710546240231259	93.0	0	0
+B cells	Unstim	M	promoter	2	2	0	0			0	0
+B cells	Unstim	M	proximal_peak	4	2	4	4	0.4380204218341299	93.0	0	0
+Cytotoxic T/NK cells	Unstim	F	promoter	8	8	0	0			3	0
+Cytotoxic T/NK cells	Unstim	F	proximal_peak	13	6	13	13	0.4396321618009563	94.0	4	0
+Cytotoxic T/NK cells	Unstim	F	tss_proximal_peak	3	3	3	3	0.7689513230716121	94.0	1	0
+Memory T cells	Unstim	F	distal_peak	6	2	6	6	0.4605682658536824	94.0	6	0
+Memory T cells	Unstim	F	promoter	19	19	0	0			9	0
+Memory T cells	Unstim	F	proximal_peak	28	12	28	28	0.5065144740642131	94.0	19	0
+Memory T cells	Unstim	F	tss_proximal_peak	7	7	7	7	0.6477746176859984	94.0	3	0
+Memory T cells	Unstim	M	distal_peak	4	2	4	4	0.4988827354931885	94.0	0	0
+Memory T cells	Unstim	M	promoter	15	15	0	0			0	0
+Memory T cells	Unstim	M	proximal_peak	18	12	18	18	0.4267887175848143	94.0	0	0
+Memory T cells	Unstim	M	tss_proximal_peak	10	9	10	10	0.7117556573298831	94.0	0	0
+Monocytes	Unstim	F	distal_peak	3	3	3	3	0.4714842174332429	79.0	1	0
+Monocytes	Unstim	F	promoter	34	34	0	0			9	0
+Monocytes	Unstim	F	proximal_peak	17	13	17	17	0.4491311689554886	79.0	7	0
+Monocytes	Unstim	F	tss_proximal_peak	5	5	5	5	0.5752778756704019	79.0	2	0
+Naive CD4 T cells	Unstim	F	distal_peak	5	2	5	5	0.483691092714586	93.0	5	0
+Naive CD4 T cells	Unstim	F	promoter	17	17	0	0			9	0
+Naive CD4 T cells	Unstim	F	proximal_peak	18	10	18	18	0.4540885927336091	93.0	14	0
+Naive CD4 T cells	Unstim	F	tss_proximal_peak	9	9	9	9	0.538917661264641	93.0	4	0
+Naive CD8 T cells	Unstim	F	promoter	4	4	0	0			3	0
+Naive CD8 T cells	Unstim	F	proximal_peak	1	1	1	1	0.5253159605044957	90.0	1	0
+Naive CD8 T cells	Unstim	F	tss_proximal_peak	2	2	2	2	0.4004208352299822	90.0	2	0
