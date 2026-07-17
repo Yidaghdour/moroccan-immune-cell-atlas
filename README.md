@@ -343,12 +343,6 @@ Scripts used for cell-type-specific pseudobulk generation, edgeR differential ac
 *   **[Pipeline Scripts Guide](sc-atacseq/code/scripts/README.md):** Descriptions of individual Python and R scripts.
 
 
-
-### Directory
-
-```text
-sc-atacseq/
-
 ---
 
 ## Multi-omics Analysis
